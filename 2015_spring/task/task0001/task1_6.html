@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                clear: both;
+                margin: 0;
+                padding: 0;
+            }
+            .out{
+                width: 100%;
+                height: 100%;
+            }
+            .in{
+                background-color: red;
+                width: 960px;
+                height: 20px;
+                margin: 25% auto;
+            }
+            .div4{
+
+margin-top: 50px;
+
+overflow: hidden;
+
+}
+
+.top2, .bottom2, .top3, .bottom3, .top4, .bottom4, .top5, .bottom5{
+
+height: 1px;
+
+background: lightblue;
+
+overflow: hidden;
+
+}
+
+.top1, .bottom1{
+
+margin: 0px 5px;
+
+border-top: solid 1px black;
+
+}
+
+.top2, .bottom2{
+
+margin: 0px 3px;
+
+border-left: solid 1px black;
+
+border-right: solid 1px black;
+
+}
+
+.top3, .bottom3{
+
+margin: 0px 2px;
+
+border-left: solid 1px black;
+
+border-right: solid 1px black;
+
+}
+
+.top4, .bottom4{
+
+margin: 0px 1px;
+
+border-left: solid 1px black;
+
+border-right: solid 1px black;
+
+}
+
+.top5, .bottom5{
+
+margin: 0px 1px;
+
+border-left: solid 1px black;
+
+border-right: solid 1px black;
+
+}
+
+.main{
+
+height: 100%;
+
+border-left: solid 1px black;
+
+border-right: solid 1px black
+
+; background: lightblue;
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="out">
+            <div class="in"></div>
+        </div>
+        <div class="div4">
+
+            <div class="top1"></div>
+            
+            <div class="top2"></div>
+            
+            <div class="top3"></div>
+            
+            <div class="top4"></div>
+            
+            <div class="top5"></div>
+            
+            <div class="main"> 有的圆角矩形是复杂图案，无法直接用border-radius，请在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形 </div>
+            
+            <div class="bottom5"></div>
+            
+            <div class="bottom4"></div>
+            
+            <div class="bottom3"></div>
+            
+            <div class="bottom2"></div>
+            
+            <div class="bottom1"></div>
+            
+        </div>
+    </body>
+</html>

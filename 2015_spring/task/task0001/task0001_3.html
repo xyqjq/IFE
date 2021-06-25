@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <div id="absolute-column">
+        <div id="div-a-1">div-a</div>
+        <div id="div-b-1">div-b</div>
+        <!-- <div id="div-c-1">div-c</div> -->
+    </div>
+    <div id="float-column">
+        <div id="div-d-1">div-d</div>
+        <div id="div-e-1">div-e</div>
+        <!-- <div id="div-c-1">div-c</div> -->
+    </div>
+    <div id="bfc-column">
+        <div id="div-a-3">div-a</div>
+        <div id="div-b-3">div-b</div>
+    </div>
+    <div id="bfc-column">
+        <div id="div-a-4">div-a</div>
+        <div id="div-c-4">div-c</div>
+        <div id="div-b-4">div-b</div>
+    </div>
+    <div class="box">
+        <div class="box1">左</div>
+        <div class="box2">中中中中中中中中中中中中中中中中中中中中中中</div>
+        <div class="box3">右</div>
+    </div>
+    <style>
+        #absolute-column {
+    position: relative;
+}
+
+#div-b-1 {
+    background-color: blue;
+    height: 35px;
+    margin-left: 50px;
+}
+
+#div-a-1 {
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#float-column{
+width: 100%;
+height: 250px;
+}
+#div-d-1 {
+    width: 200px;
+    height: 250px;
+    float: left;
+    background-color: seagreen;
+}
+#div-e-1 {
+    background-color: yellow;
+    height: 200px;
+    margin-left: 200px;
+}
+#bfc-column {
+    margin-top: 10px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#div-a-3 {
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    float: left;
+}
+
+#div-b-3 {
+    background-color: blue;
+    height: 55px;
+    overflow: hidden;
+}
+#div-a-4 {
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    float: left;
+}
+
+#div-b-4 {
+    background-color: blue;
+    height: 80px;
+    overflow: hidden;
+}
+#div-c-4 {
+    background-color:skyblue;
+    width: 60px;
+    height: 55px;
+    float: right;
+}
+.box{
+    position: relative;
+    margin: 10px auto;
+}
+.box1{
+   position: absolute;
+   top:0px;
+   left:0px;
+   background-color: red;
+   width:200px;
+   height:200px;
+}
+.box2{
+   background-color: green;
+   width: auto;
+   height:230px;
+   word-break: break-all;
+   margin: 0 200px;
+}
+.box3{
+   position: absolute;
+   top:0px;
+   right:0px;
+   background-color: blue;
+   width:200px;
+   height:250px;
+}
+*{
+    margin: 0;
+    float: 0;
+}
+    </style>
+</html>

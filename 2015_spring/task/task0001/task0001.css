@@ -1,0 +1,20 @@
+h1{
+    color: blue;
+    font-family: myFirstFont;
+}
+h2{
+    font-size: 14px;
+}
+p{
+    font-size: 12pxx;
+    color: yellow;
+    background-color: black;
+}
+img{
+    border: 2px solid red;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(kust.woff.ttf);
+    font-weight: bold;
+  }
