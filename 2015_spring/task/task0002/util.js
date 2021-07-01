@@ -401,7 +401,7 @@ function clickListener(event) {
     console.log(event);
 }
 
-each($("#list").getElementsByTagName('li'), function(li) {
+$.each($("#list")[0].getElementsByTagName('li'), function(index,li) {
     addClickEvent(li, clickListener);
 });
 //```
