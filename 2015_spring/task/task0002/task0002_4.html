@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        .searchbox
+        {
+            left: 0;
+            position: relative;
+        }
+        #auto{
+            display: none;
+            width: 175px;
+            border: 1px #74c0f9 solid;
+            background: #FFF;
+            position: absolute;
+            top: 23px;
+            left: 0;
+            color: #323232;
+        }
+    </style>
     <body>
-        <ul id="list">
-            <li id="item1">Simon</li>
-            <li id="item2">Kenner</li>
-            <li id="item3">Erik</li>
-        </ul>
-        <button id="btn">Change</button>
+        <div class="searchbox">
+            <input id="searchText" type="text">
+            <div id="auto"></div>
+        </div>
     </body>
-    <script type="text/javascript" src="./util.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="./task0002_4.js"></script>
 </html>
