@@ -12,12 +12,18 @@ $(function(){
     );
     $("#searchText").keyup(
         function(event){
+            if(event.keyCode != 38 && event.keyCode != 40 && event.keyCode != 13){
+                autoCompelete(suggestData);
+            }
+        }
+    );
+    $("#searchText").keydown(
+        function(event){
             if(event.keyCode == 38){
                 console.log(38);
                 if($("#auto").is(":visible")){
                     $("#"+highLight).css("background-color","white");
                     if(highLight > 0){
-                        
                         highLight--;
                     }else{
                         highLight = $("#auto").children().length - 1;
@@ -43,8 +49,6 @@ $(function(){
                     $("#auto").css("display","none");
                     highLight = -1;
                 }
-            }else{
-                autoCompelete(suggestData);
             }
         }
     );
@@ -79,7 +83,6 @@ function autoCompelete(suggestData){
                     $("#"+highLight).css("background-color","white");
                     $(this).css("background-color","aliceblue");
                     highLight = $(this).attr("id");
-                    console.log($(this).attr("id"));
                 });
                 $("#"+j).mouseout(function(){
                     $(this).css("background-color","white");
